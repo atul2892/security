@@ -1,0 +1,1131 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Security Services</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.css'%}" />
+
+  <!-- fonts style -->
+  <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'/>
+
+  <!-- font awesome style -->
+  <link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{%static 'css/responsive.css'%}" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+          <!-- <div class="lang_box dropdown">
+            <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+              <img src="{%static 'images/flag-uk.png'%}" alt="flag" class=" " title="United Kingdom"> <i class="fa fa-angle-down " aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu ">
+              <a href="#" class="dropdown-item">
+                <img src="{%static 'images/flag-france.png'%}" class="" alt="flag">
+              </a>
+            </div>
+            <span>
+              English
+            </span>
+          </div> -->
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +91 9999999999
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                Email : abcd@gmail.com
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                XXX, XXXXXX, XXXXXXX, XXXXX
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="/">
+              <!-- <img src="{%static 'images/logoD1.jpg'%}" alt=""> -->
+              <h2 style="font-size: 38px;"><b style="color: red;"><i><u>S</u></i></b>ecurity</h2>
+            </a>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item {% if request.path == '/' %} active {% endif %} ">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item {% if request.path == '/about/' %} active {% endif %} ">
+                  <a class="nav-link" href="/about"> About Us</a>
+                </li>
+                <li class="nav-item {% if request.path == '/enquiry/' %} active {% endif %}  ">
+                  <a class="nav-link" href="/enquiry">Enquiry</a>
+                </li>
+                <li class="nav-item {% if request.path == '/static-guard/' %} active {% endif %}  ">
+                  <div class="dropdown">
+                    <a class="nav-link" href="#">Our Services</a>
+                    <div class="dropdown-content">
+                      <a href="/static-guard/">Static Guard Services</a>
+                      <a href="/mobile-patrol/">Mobile Patrol Services</a>
+                      <a href="/event-security/">Event Security</a>
+                      <a href="/retail-security/">Retail Security</a>
+                      <a href="/concierge-security/">Concierge Security</a>
+                      <a href="/executive-protection/">Executive Protection</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item {% if request.path == '/contact/' %} active {% endif %}  ">
+                  <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#"> Login</a>
+                </li>
+                <form class="form-inline"> 
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form> -->
+              </ul>
+
+              <script>
+                // Get the current URL path
+                var currentPath = window.location.pathname;
+            
+                // Find the corresponding link and add the 'active' class
+                var links = document.querySelectorAll('.dropdown-content a');
+                links.forEach(function(link) {
+                    if (link.getAttribute('href') === currentPath) {
+                        link.classList.add('active');
+                        // If the link is in a dropdown, also add 'active' class to its parent li
+                        link.closest('.nav-item').classList.add('active');
+                    }
+                });
+              </script>
+
+              <div class="quote_btn-container">
+                <a href="" class="quote_btn">
+                  Get A Quote
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <style>
+      /* Add some basic styling to the dropdown */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 99999;
+      }
+  
+      /* Style the dropdown button/link */
+      .dropdown .nav-link {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+  
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 180px;
+      }
+  
+      /* Style the dropdown links */
+      .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+  
+      /* Change color on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+  
+      /* Show the dropdown content when the mouse is over the dropdown link */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+    <!-- end header section -->
+    <!-- slider section -->
+    {%block body%}
+
+            {%for i in messages%}
+            <script>
+              alert("{{i}}")
+            </script>
+            {%endfor%}
+
+            <!-- Floating Icons Start -->
+
+    <style>
+      
+
+      /* .floating-icons {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+      } */
+
+      .floating-icons a.whatsapp {
+          position: fixed;
+          z-index: 1000;
+          bottom: 50px;
+          right: 20px;
+          display: block;
+          width: 50px;
+          height: 50px;
+          background-color: #25D366; /* WhatsApp color */
+          color: #fff;
+          text-align: center;
+          line-height: 50px;
+          font-size: 20px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+      }
+
+      .floating-icons a.contact {
+          position: fixed;
+          z-index: 1000;
+          bottom: 50px;
+          left: 20px;
+          display: block;
+          width: 50px;
+          height: 50px;
+          background-color: #25D366; /* WhatsApp color */
+          color: #fff;
+          text-align: center;
+          line-height: 50px;
+          font-size: 20px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+      }
+
+      .floating-icons a.contact {
+          background-color: #34B7F1; /* Contact color */
+      }
+
+      .floating-icons a:hover {
+          background-color: #128C7E; /* WhatsApp color on hover */
+      }
+
+      .floating-icons a.contact:hover {
+          background-color: #1E87F0; /* Contact color on hover */
+      }
+    </style>
+
+    <div class="floating-icons">
+      <a class="whatsapp" href="https://api.whatsapp.com/send?phone=+91999999999" target="_blank" title="Chat on WhatsApp">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
+      <a class="contact" href="tel:+91999999999" title="Contact Us">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  <!-- Floating Icons End -->
+
+    <section class="slider_section">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      Need a Quality Security <br>
+                      Service For Your Business<br>
+                    </h1>
+                    <div class="btn-box">
+                      <a href="/contact/" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="/about/" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      Need a Quality Security <br>
+                      Service For Your Business<br>
+                    </h1>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      Need a Quality Security <br>
+                      Service For Your Business<br>
+                    </h1>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      ARCHITECT <br>
+                      BUILDER CONSTRUCTION <br>
+                      SERVICES
+                    </h1>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="detail-box">
+                    <h1>
+                      ARCHITECT <br>
+                      BUILDER CONSTRUCTION <br>
+                      SERVICES
+                    </h1>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Contact Us
+                      </a>
+                      <a href="" class="btn2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <!-- <li data-target="#customCarousel1" data-slide-to="3"></li>
+          <li data-target="#customCarousel1" data-slide-to="4"></li> -->
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+
+  <!-- about section -->
+
+  <section class="about_section mt-5">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              At [My Company], we are more than just a security guard service provider – we are your partners in safety and protection. With years of experience in the security industry, we have established ourselves as a trusted leader in delivering comprehensive security solutions to businesses, organizations, and individuals alike.
+            </p>
+            <a href="/about/">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{%static 'images/a9.jpg'%}" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Services
+          </h2>
+          <p>
+            Certainly! Here's an outline of various types of security services that Our company may offer:
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{%static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Static Guard Services:
+                </h5>
+                <p>
+                  Uniformed security guards stationed at fixed points to monitor access, deter criminal activity, and ensure the safety of premises and personnel.
+                </p>
+                <a href="/static-guard/">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{%static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mobile Patrol Services:
+                </h5>
+                <p>
+                  Patrol units equipped to conduct regular inspections of properties, parking lots, or facilities, providing a visible security presence and responding promptly to any security breaches or incidents.
+                </p>
+                <a href="/mobile-patrol/">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{%static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Event Security:
+                </h5>
+                <p>
+                  Specialized security services tailored for events of all sizes, including corporate gatherings, concerts, festivals, sports events, and private parties. Event security may involve crowd management, access control, VIP protection, and emergency response planning.
+                </p>
+                <a href="/event-security/">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{%static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Retail Security:
+                </h5>
+                <p>
+                  Security solutions designed specifically for retail environments to prevent theft, minimize shoplifting, and maintain a safe shopping experience for customers and staff. Services may include loss prevention, surveillance, and apprehension of shoplifters.
+                </p>
+                <a href="/retail-security/">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{%static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Concierge Security:
+                </h5>
+                <p>
+                  Security personnel trained to provide a welcoming presence while maintaining strict access control measures in residential buildings, commercial properties, hotels, and gated communities. Concierge security may involve greeting visitors, monitoring surveillance systems, and managing deliveries.
+                </p>
+                <a href="/concierge-security/">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box ">
+              <div class="img-box">
+                <img src="{%static 'images/s3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Executive Protection:
+                </h5>
+                <p>
+                  Personalized security services for high-profile individuals, corporate executives, celebrities, and dignitaries. Executive protection may include close protection, threat assessment, secure transportation, and advance security planning to mitigate potential risks.
+                </p>
+                <a href="/executive-protection/">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  
+  <!-- project section -->
+
+  <!-- <section class="project_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Projects
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="filter_box">
+          <h6>
+            Category filter
+          </h6>
+          <nav class="owl-filter-bar">
+            <a href="#" class="item active" data-owl-filter="*">All</a>
+            <a href="#" class="item" data-owl-filter=".painting">Painting</a>
+            <a href="#" class="item" data-owl-filter=".reconstruction">Reconstruction </a>
+            <a href="#" class="item" data-owl-filter=".repair">Repairs </a>
+            <a href="#" class="item" data-owl-filter=".residential">Residential </a>
+            <a href="#" class="item" data-owl-filter=".styling">Styling </a>
+          </nav>
+        </div>
+
+        <div class="owl-carousel project_carousel">
+          <div class="item painting">
+            <div class="box">
+              <div class="img-box">
+                <img src="{%static 'images/project1.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Interior work
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item reconstruction">
+            <div class="box">
+              <div class="img-box">
+                <img src="{%static 'images/project2.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Interior work
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item repair">
+            <div class="box">
+              <div class="img-box">
+                <img src="{%static 'images/project1.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Interior work
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item residential">
+            <div class="box">
+              <div class="img-box">
+                <img src="{%static 'images/project1.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Interior work
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item styling">
+            <div class="box">
+              <div class="img-box">
+                <img src="{%static 'images/project1.jpg'%}" alt="" />
+                <a href="" class="pin_link">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Interior work
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable. If you are going to use
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end project section -->
+
+  <!-- client section -->
+  <!-- <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{%static 'images/client.jpg'%}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Morojink
+                        </h5>
+                        <h6>
+                          Customer
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum
+                      dolore eu fugia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{%static 'images/client.jpg'%}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Morojink
+                        </h5>
+                        <h6>
+                          Customer
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum
+                      dolore eu fugia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{%static 'images/client.jpg'%}" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <div class="client_info">
+                      <div class="client_name">
+                        <h5>
+                          Morojink
+                        </h5>
+                        <h6>
+                          Customer
+                        </h6>
+                      </div>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum
+                      dolore eu fugia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#customCarousel2" data-slide-to="1"></li>
+        <li data-target="#customCarousel2" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section> -->
+  <!-- end client section -->
+
+  <!-- why us section -->
+
+  <!-- <section class="why_us_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why Choose Us?
+        </h2>
+      </div>
+      <div class="why_us_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="{%static 'images/w1.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Project done on time
+            </h5>
+            <p>
+              Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+              Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+              going through the
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{%static 'images/w2.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Always avaliable
+            </h5>
+            <p>
+              Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+              Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+              going through the
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{%static 'images/w3.png'%}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Professional and responsible
+            </h5>
+            <p>
+              Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+              Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+              going through the
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end why us section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding-bottom">
+    <div class="container-fluid">
+      <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="heading_container">
+          <h2>
+            Contact Us
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+          <div class="form_container">
+            
+            <form method="" action="">
+              {%csrf_token%}
+              <div style="margin-top: 10%; font-weight: 800;">
+                Call : +91 9717473908
+                <!-- <input type="text" placeholder="Your Name" /> -->
+              </div>
+              <div style="margin-top: 10%; font-weight: 800;">
+                Email : digitalsubsetmediapvtltd@gmail.com
+                <!-- <input type="text" placeholder="Phone Number" /> -->
+              </div>
+              <div style="margin-top: 10%; font-weight: 800;">
+                H.No. 1/56DLalita Park, Laxmi Nagar, New Delhi
+                <!-- <input type="email" placeholder="Email" /> -->
+              </div>
+              <div>
+                <!-- <input type="text" class="message-box" placeholder="Message" /> -->
+              </div>
+              <div class="btn_box" style="margin-top: 20%;">
+                <button>
+                  <a href="/contact/" style="color: white;">Go to Contact Form</a>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 px-0">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8656649587824!2d77.27530547383712!3d28.63378798402666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcac34aa8013%3A0x5cda1404b9f3df55!2zaCwgMTU2LCDgpLXgpYDgpLAg4KS44KS-4KS14KSw4KSV4KSwIOCkrOCljeCksuClieCklSwg4KSy4KSy4KS_4KSk4KS-IOCkquCkvuCksOCljeCklSwg4KSy4KSV4KWN4KS34KWN4KSu4KWAIOCkqOCkl-CksCwg4KSm4KS_4KSy4KWN4KSy4KWALCAxMTAwOTI!5e0!3m2!1shi!2sin!4v1706691099494!5m2!1shi!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {%endblock%}
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+            
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +91 9999999999
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email : abcd@gmail.com
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            XXX, XXXXXX, XXXXXXX, XXXXX
+          </span>
+        </a>
+      </div>
+
+      <div class="info_top ">
+        <div class="row info_main_row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="/">Home <span class="sr-only">(current)</span></a>
+                <!-- <a class="" href="/service">Services</a> -->
+                <a class="" href="/about/"> About</a>
+                <!-- <a class="" href="/project">Project</a> -->
+                <a class="" href="/enquiry/">Enquiry</a>
+                <a class="" href="/contact/">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <h5>
+                INSTAGRAM FEEDS
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="{%static 'images/a7.jpg'%}" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="{%static 'images/a7.jpg'%}" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="{%static 'images/a7.jpg'%}" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="{%static 'images/a7.jpg'%}" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="{%static 'images/a7.jpg'%}" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="{%static 'images/a7.jpg'%}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                SIGN UP TO OUR NEWSLETTER
+              </h4>
+              <form action="/subscribtion/" method="post">
+                {%csrf_token%}
+                <input type="email" placeholder="Enter Your Email" required/>
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="info_logo">
+              <a href="/">
+                <!-- <img src="{%static 'images/logoD1.jpg'%}" style="border-radius: 8px;" alt=""> -->
+                <h2 style="font-size: 38px;"><b style="color: red;"><i><u>S</u></i></b>ecurity</h2>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="/">security pvt.ltd</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="{%static 'js/bootstrap.js'%}"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="{%static 'js/custom.js'%}"></script>
+  <!-- Google Map -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script> -->
+  <!-- End Google Map -->
+
+</body>
+
+</html>
